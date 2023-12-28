@@ -14,7 +14,7 @@ html {
 body {
     border: 2px solid red;
     height: 99vh;
-    width: 100vw;
+    width: 99vw;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -31,8 +31,12 @@ body {
 
 .door {
     border: 2px solid black;
-    height: 13vh;
-    width: 5.5vh;
+    height: 20vh;
+    width: 10vh;
     transform-origin: center;
     position: absolute;
+    background-color: #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

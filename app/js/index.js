@@ -2,8 +2,8 @@
 const NUM_DOORS = 6;
 const DOOR_COORDS_X = [];
 const DOOR_COORDS_Y = [];
-const DOOR_WIDTH = 5.5;
-const DOOR_HEIGHT = 13;
+const DOOR_WIDTH = 10;
+const DOOR_HEIGHT = 20;
 const SLICE = 2 * Math.PI / NUM_DOORS;
 const ORIGIN_X = 40;
 const ORIGIN_Y = 40;
@@ -39,7 +39,7 @@ function drawDoorHTML() {
     for (let i = 0; i < NUM_DOORS; i++) {
         let door = doors[i];
         door.style.transform = `translateX(${DOOR_COORDS_X[i]}vh) translateY(${DOOR_COORDS_Y[i]}vh)`;
-        console.log(`x: ${DOOR_COORDS_X[i]} y: ${DOOR_COORDS_Y[i]}`);
+        door.style.backgroundImage = `url("assets/doors/door${i}.jpeg")`;
     }
 }
 
