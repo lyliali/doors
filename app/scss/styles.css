@@ -1,5 +1,6 @@
 :root {
-    /* Variable definitions here */
+    --door-width: 10vh;
+    --door-height: 20vh;
 }
 
 * {
@@ -32,8 +33,8 @@ body {
 
 .door {
     border: 2px solid black;
-    height: 20vh;
-    width: 10vh;
+    height: var(--door-height);
+    width: var(--door-width);
     transform-origin: center;
     position: absolute;
     background-color: #000000;
