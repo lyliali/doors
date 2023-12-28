@@ -25,37 +25,14 @@ body {
     border: 2px solid blue;
     border-radius: 50%;
     position: absolute;
-    width: 75vh;
-    height: 75vh;
-    /*top: 12%;
-    left: 25%*/
+    width: 80vh;
+    height: 80vh;
 }
 
 .door {
     border: 2px solid black;
-    height: 18%;
-    width: 7%;
+    height: 13vh;
+    width: 5.5vh;
     transform-origin: center;
     position: absolute;
-    transform: translate(36vh);
-}
-
-.door:nth-of-type(2) {
-
-}
-
-.door:nth-of-type(3) {
-
-}
-
-.door:nth-of-type(4) {
-
-}
-
-.door:nth-of-type(5) {
-
-}
-
-.door:nth-of-type(6) {
-
 }
