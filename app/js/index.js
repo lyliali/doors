@@ -32,13 +32,16 @@ function doorsTranslateY() {
 function drawDoorHTML() {
     const nexus = document.getElementsByClassName("nexus")[0];
     for (let i = 0; i < NUM_DOORS; i++) {
-        let door = `<div class="door" id="door${i}"></div>`;
+        let knob = `<div class="knob"></div>`;
+        let door = `<div class="door" id="door${i}">${knob}</div>`;
         nexus.innerHTML += door;
     }
     const doors = document.getElementsByClassName("door");
     for (let i = 0; i < NUM_DOORS; i++) {
         let door = doors[i];
-        door.style.transform = `translateX(${DOOR_COORDS_X[i]}vh) translateY(${DOOR_COORDS_Y[i]}vh)`;
+        //door.style.transform = `translateX(${DOOR_COORDS_X[i]}vh) translateY(${DOOR_COORDS_Y[i]}vh)`;
+        door.style.top = `${DOOR_COORDS_Y[i]}vh`;
+        door.style.left = `${DOOR_COORDS_X[i]}vh`;
         door.style.backgroundImage = `url("assets/doors/door${i}.jpeg")`;
     }
 }
